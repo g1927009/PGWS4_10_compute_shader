@@ -1,0 +1,21 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWStructuredBuffer<float4> Result;
+float2 position;
+float time;
+float r;
+float add;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+
+    r += add;
+    position.x += cos(time * 5) * r;
+    position.y += sin(time * 5) * r;
+    Result[0] = float4(position.x, position.y, r, add);
+}

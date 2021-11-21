@@ -7,11 +7,11 @@
 ![結果画像2](result2.gif)
 
 ## 自分なりにかっこいいシーン
-![結果画像](result.png)
+![結果画像](result.gif)
 
 # 自分なりに変更した点
--
--
+-キューブを公転させました
+-参考：https://www.wwwmaplesyrup-cs6.work/entry/MapleComputeTutorial1
 -
 
 
